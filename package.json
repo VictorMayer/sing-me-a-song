@@ -5,7 +5,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=prod node src/server.js",
+    "dev": "NODE_ENV=dev nodemon src/server.js",
+    "test": "NODE_ENV=test npx jest --watch -i",
+    "test-coverage": "NODE_ENV=test npx jest -i --coverage",
+    "test-server": "NODE_ENV=test nodemon src/server.js"
   },
   "keywords": [],
   "author": "",

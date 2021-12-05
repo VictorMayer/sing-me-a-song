@@ -12,4 +12,7 @@ app.post('/recommendations', songController.newSong);
 app.post('/recommendations/:id/upvote', songController.upvote);
 app.post('/recommendations/:id/downvote', songController.downvote);
 
+app.get('/recommendations/random', songController.getRandomSong);
+app.get('/recommendations/top/:amount', songController.getSongList);
+
 export default app;
