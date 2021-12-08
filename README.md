@@ -1,1 +1,0 @@
-This project simulates an song recommendation API of Youtube videos, built in Node.js using express
